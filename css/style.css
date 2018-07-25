@@ -1,0 +1,152 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto+Condensed');
+
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    height: auto;
+    background: #eee;
+}
+
+h1 {
+    font-weight: 400;
+    font-size: 2.5rem;
+    text-transform: uppercase;
+    margin: 0;
+    margin-bottom: 10px;
+}
+
+h2 {
+    font-weight: 400;
+    font-size: 1.2rem;
+    text-transform: capitalize;
+    margin: 0;  
+}
+
+#img1 {
+    display: block;
+    width: 100%;
+}
+
+main {
+    max-width: 1050px;
+    margin: auto;
+    box-shadow: 30px 0px 40px rgba(27, 20, 90, 0.2), -30px 0px 40px rgba(0,0,0,0.2);
+}
+
+#landing {
+    background: darkslateblue;
+}
+#landing-text {
+    display: flex;
+    flex: 0 1 40vw;
+    height: 50vh;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    padding-right: 1rem;
+    padding-left: 1rem;
+    color: #fff;
+}
+
+#landing-text h2 {
+    color: darkorange;
+}
+
+#landing-image {
+    background: url(https://source.unsplash.com/5Ntkpxqt54Y);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 50vh;
+    flex: 0 1 60vw;
+    margin: 0;
+}
+
+.btn {
+    padding: 0.5rem 2rem;
+    width: 4em;
+    border: 1px darkorange solid;
+    display: inline-block;
+    margin-top: 2rem;
+    border-radius: 50px;
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    transition: background 600ms ease;
+}
+
+.btn:hover {
+    background: darkorange;
+}
+
+#header {
+    padding: 1.5rem;
+    text-align: center;
+    background: #333;
+    color: #fff;
+}
+
+#header h2 {
+    border-left: dotted 1px darkorange;
+    border-right: dotted 1px darkorange;
+    display: inline-block;
+    padding-right: 1rem;
+    padding-left: 1rem;
+}
+
+.caption {
+    padding: 0.8rem;
+    text-align: center;
+    font-size: 1rem;
+}
+
+footer {
+    text-align: center;
+    border-top: darkorange 2px solid;
+    background: darkslateblue;
+    color: #fff;
+    max-width: 1050px;
+    margin: auto;
+    box-shadow: 30px 0px 40px rgba(0,0,0,0.2), -30px 0px 40px rgba(0,0,0,0.2);
+}
+
+ footer h3 {
+    font-size: 2.5rem;
+    margin-bottom: 0;
+}
+
+footer #email-paragraph {
+    color: darkorange;
+    
+}
+
+footer #email-paragraph a {
+    color: darkorange;
+    text-decoration: none;
+}
+
+footer #email-paragraph a:hover {
+    color: white;
+}
+
+/* Screen size 500px + */
+
+@media(min-width: 500px) {
+    #landing {
+        display: flex;
+        height: 100%;
+    }
+    #landing-text {
+        height: 100vh;
+    }
+    #landing-image {
+        height: 100vh;
+    }
+}
+
+/* Screen size 700px + */
+@media(min-width: 900px) {
+    .btn {
+        padding: 1rem 3rem;
+    }
+}
